@@ -1,0 +1,37 @@
+<div class="page-main-header" [class.open]="_collapsService.collapsOption">
+    <div class="main-header-right row">
+        <div class="mobile-sidebar">
+            <div class="media-body switch-sm">
+                <label class="switch">
+                    <a (click)="collapsSidebar()">
+                        <app-feather-icon icon="align-left"></app-feather-icon>
+                    </a>
+                </label>
+            </div>
+        </div>
+        <div class="nav-right col">
+            <ul class="nav-menus">
+                <li class="onhover-dropdown"></li>
+                <li></li>
+                <li class="onhover-dropdown">
+                    <div class="media align-items-center">
+                        <img class="align-self-center pull-right img-50 rounded-circle" [src]="userImage"
+                            alt="header-user" />
+                    </div>
+                    <ul class="profile-dropdown onhover-show-div p-20 profile-dropdown-hover">
+                        <li>
+                            <a routerLink="/settings/profile">
+                                <app-feather-icon icon="user"></app-feather-icon> Edit Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/auth/login">
+                                <app-feather-icon icon="log-out"></app-feather-icon>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
