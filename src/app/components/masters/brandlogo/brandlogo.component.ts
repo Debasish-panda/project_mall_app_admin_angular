@@ -109,7 +109,7 @@ export class BrandlogoComponent implements OnInit {
       return;
     }
 
-    if(this.dbops === DbOperation.create && !this.fileToUpload){ //this is used for the validation image
+    if (this.dbops === DbOperation.create && !this.fileToUpload) { //this is used for the validation image
       this._toastr.error('Please upload an image', 'BrandLogo Master');
       return;
     }
@@ -152,7 +152,7 @@ export class BrandlogoComponent implements OnInit {
     });
     this.buttonText = "Add";
     this.elfile.nativeElement.value = '';
-      this.addedImagePath = 'assets/image/noimage.png'
+    this.addedImagePath = 'assets/image/noimage.png'
     this.dbops = DbOperation.create;
     this.getData();
     this.elnav.select('view');
@@ -165,7 +165,7 @@ export class BrandlogoComponent implements OnInit {
     });
     this.buttonText = "Add";
     this.elfile.nativeElement.value = '';
-      this.addedImagePath = 'assets/image/noimage.png'
+    this.addedImagePath = 'assets/image/noimage.png'
     this.dbops = DbOperation.create;
     this.elnav.select('view');
   }
@@ -251,7 +251,7 @@ export class BrandlogoComponent implements OnInit {
     this.buttonText = "Add";
     this.dbops = DbOperation.create;
     this.elfile.nativeElement.value = '';
-      this.addedImagePath = 'assets/image/noimage.png'
+    this.addedImagePath = 'assets/image/noimage.png'
   }
 
 }

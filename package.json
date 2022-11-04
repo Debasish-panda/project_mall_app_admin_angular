@@ -23,6 +23,7 @@
     "bootstrap": "^5.2.2",
     "feather-icons": "^4.29.0",
     "font-awesome": "^4.7.0",
+    "ngx-ckeditor": "^12.0.0",
     "ngx-toastr": "^15.2.0",
     "rxjs": "~7.5.0",
     "sweetalert2": "^11.4.37",
