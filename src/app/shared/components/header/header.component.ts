@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     let userDetails = JSON.parse(localStorage.getItem('userDetails'));
     this.userImage = (userDetails.imagePath == "" || userDetails.imagePath == null) ? "assets/image/user.png" :
-    environment.BASE_IMAGES_PATH + userDetails.imagePath
+    environment.BASE_IMAGES_PATH + userDetails.imagePath;
   }
 
   collapsSidebar(){
